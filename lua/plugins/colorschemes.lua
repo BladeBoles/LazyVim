@@ -16,11 +16,11 @@ return {
   --     vim.cmd.colorscheme("palenight")
   --   end,
   -- },
-  {
-    -- Theme inspired by Atom
-    "navarasu/onedark.nvim",
-    config = function()
-      vim.cmd.colorscheme("onedark")
-    end,
-  },
+  -- {
+  --   -- Theme inspired by Atom
+  --   "navarasu/onedark.nvim",
+  --   config = function()
+  --     vim.cmd.colorscheme("onedark")
+  --   end,
+  -- },
 }
