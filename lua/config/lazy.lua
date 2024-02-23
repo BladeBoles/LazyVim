@@ -6,6 +6,13 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
+-- Automatically enable word wrap and set linebreak for all file types
+vim.api.nvim_create_augroup("AutoWordWrap", { clear = true })
+vim.api.nvim_create_autocmd("BufWinEnter", {
+  group = "AutoWordWrap",
+  pattern = "*",
+  command = "setlocal wrap linebreak",
+})
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
