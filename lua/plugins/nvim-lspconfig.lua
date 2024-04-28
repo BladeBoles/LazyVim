@@ -14,7 +14,7 @@ return {
           plugins = {
             {
               name = "@vue/typescript-plugin",
-              location = "/home/gandalf/.nvm/versions/node/v18.12.1/lib/@vue/typescript-plugin",
+              location = "/home/gandalf/.nvm/versions/node/v18.12.1/lib/node_modules/@vue/typescript-plugin",
               languages = { "javascript", "typescript", "vue" },
             },
           },
